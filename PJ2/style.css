@@ -1,0 +1,113 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-optical-sizing: auto;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+ 
+}
+.container{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(img/akaza_the_upper_moon_wallpaper_by_muztnafi_dej5vzj-fullview.jpg) ;
+background-position: center;
+background-size: cover;
+padding: 5 8%;
+position: relative;
+}
+nav
+{display: flex;
+width: 100%;
+align-items: center;
+flex-wrap: wrap;
+padding: 5px 0;}
+.logo
+{width: 120px;
+ cursor: pointer;}
+ .cart-icon{
+cursor: pointer;
+margin-right: 29px;
+width: 30px;}
+nav ul{
+flex: 1;
+text-align: right;
+padding: 30px;}
+nav ul li{
+ display: inline-block;
+ list-style: none;
+ margin: 10px 30px;}
+ nav ul li a {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+ 
+ }
+nav ul li a::after{
+ content:'';
+ width: 0%;
+ height: 3px;
+ position: absolute;
+ bottom: -5%;
+ left: 50%;
+ transform: translateX(-50%);
+ background: white;
+ transition: width 0.3s;
+
+}
+nav ul li a:hover::after{
+ width: 50%;}
+ .text-box{
+  color: #fff;
+  position: absolute;
+  bottom: 8%;
+  margin-left: 30px}
+ .text-box p {
+  font-size: 50px;
+  font-weight: 600;}
+ .text-box h1 {
+  font-size: 100px;
+  line-height: 160px;
+  margin-left: -5px;
+ color: transparent;
+ -webkit-text-stroke: 1px white ;
+ background: url(img/back.png);
+-webkit-background-clip: text;
+ background-position: 0 0 ;
+ animation: back 20s linear infinite;
+ }
+ @keyframes back{ 100%{background-position: 2000px 0 ;}}
+ .text-box h3{
+  font-size: 50px;
+  font-weight: 600;}
+  .text-box row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 50px;
+  }
+  .text-box a{
+   color: #fff;
+   text-decoration: none;
+   padding: 10px 20px;
+   margin-right: 20px;
+   border: 2px solid #fff;}
+   
+   .row{
+    margin-top: 40px;
+    display: flex;
+   align-items: center;
+   }
+   .text-box a span{
+font-size: 35px;
+line-height: 15px;
+margin-left: 5px;
+
+   }
+   .social-icon{
+    position: absolute;
+    top: 1%;
+   }
+   .social-icon img{
+    width: 50px;
+    display: block;
+    margin: 25px 5px;
+   }
